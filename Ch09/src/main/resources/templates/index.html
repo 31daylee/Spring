@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns: th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ch09::Index</title>
+	</head>
+	<body>
+		<h3>Ch09: Spring Security 실습</h3>
+		<h4>Authentication Test</h4>
+		<th:block sec:authorize="isAnonymous()">
+			<a th:href="@{/user/register}">User 회원가입</a>
+			<a th:href="@{/user/login}">User 로그인</a>
+		</th:block>
+		<th:block sec:authorize="isAuthenticated()">
+			<a th:href="@{/user/logout}">User 로그아웃</a>
+		</th:block>
+		
+		<h4>Authorizaion Test</h4>
+		<th:block sec:authorize="hasRole('ADMIN')">
+			<a th:href="@{/admin/index}">관리자 페이지</a>
+		</th:block>
+		<th:block sec:authorize="hasAnyRole('ADMIN','MANAGER')">
+			<a th:href="@{/manager/index}">매니저 페이지</a>
+		</th:block>
+
+
+		
+	</body>
+</html>
