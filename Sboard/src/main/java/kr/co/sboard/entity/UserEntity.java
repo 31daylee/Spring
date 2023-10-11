@@ -1,10 +1,10 @@
 package kr.co.sboard.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import kr.co.sboard.dto.UserDTO;
 import lombok.*;
+
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -15,7 +15,7 @@ import lombok.*;
 @Table(name= "User")
 public class UserEntity {
 
-   @Id
+    @Id
     private String uid;
     private String pass;
     private String name;
@@ -33,10 +33,27 @@ public class UserEntity {
     private String addr1;
     private String addr2;
     private String regip;
-    private String regDate;
-    private String leaveDate;
+    private LocalDateTime regDate;
+    private LocalDateTime leaveDate;
 
-
+  // Entity 변환 메서드
+  public UserDTO toDTO() {
+   return UserDTO.builder()
+           .uid(uid)
+           .pass1(pass)
+           .name(name)
+           .nick(nick)
+           .email(email)
+           .hp(hp)
+           .role(role)
+           .zip(zip)
+           .addr1(addr1)
+           .addr2(addr2)
+           .regip(regip)
+           .regDate(regDate)
+           .leaveDate(leaveDate)
+           .build();
+  }
 
 
 
