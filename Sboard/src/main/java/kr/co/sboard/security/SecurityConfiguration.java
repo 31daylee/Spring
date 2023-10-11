@@ -1,19 +1,23 @@
 package kr.co.sboard.security;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.config.annotation.web.configurers.CsrfConfigurer;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+
+import java.io.IOException;
 
 
 @Configuration
@@ -37,6 +41,12 @@ public class SecurityConfiguration {
 										.failureUrl("/user/login?success=100")
 										.usernameParameter("uid")
 										.passwordParameter("pass")
+										.successHandler(new AuthenticationSuccessHandler() {
+											@Override
+											public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+												response.sendRedirect("/");
+											}
+										})
 			)
 			// 로그아웃 설정
 			.logout(config -> config
@@ -47,11 +57,13 @@ public class SecurityConfiguration {
 
 
 			// 인가 권한 설정
-			.authorizeHttpRequests(AuthorizeHttpRequests -> AuthorizeHttpRequests
-									.requestMatchers("/admin/**").hasAuthority("ADMIN")
-									.requestMatchers("/manager/**").hasAnyAuthority("ADMIN", "MANAGER")
-									.requestMatchers("/user/**").permitAll()
-									.anyRequest().authenticated());
+			.authorizeHttpRequests(authorizeHttpRequests -> authorizeHttpRequests
+					.requestMatchers("/admin/**").hasAuthority("ADMIN")
+					.requestMatchers("/manager/**").hasAnyAuthority("ADMIN", "MANAGER")
+					.requestMatchers("/user/**").permitAll()
+					.requestMatchers("/").authenticated()
+					.requestMatchers("/vendor/**", "/js/**", "/dist/**", "/data/**", "/less/**").permitAll());
+
 
 		return http.build();
 		
@@ -67,10 +79,7 @@ public class SecurityConfiguration {
 		return config.getAuthenticationManager();
 	}
 
-	@Bean
-	public WebSecurityCustomizer webSecurityCustomizer() {
-		return (web) -> web.ignoring().requestMatchers("/myResources/**");  // "/static/" 으로 들어오는 요청 무시
-	}
+
 
 
 }
