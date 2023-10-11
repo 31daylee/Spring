@@ -7548,3 +7548,132 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2023-09-26T14:04:37.551+09:00  INFO 18984 --- [RMI TCP Connection(312)-127.0.0.1] o.a.c.c.C.[.[localhost].[/Ch07]          : Destroying Spring FrameworkServlet 'dispatcherServlet'
 2023-09-26T14:04:37.553+09:00  INFO 18984 --- [RMI TCP Connection(312)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-51 - Shutdown initiated...
 2023-09-26T14:04:37.656+09:00  INFO 18984 --- [RMI TCP Connection(312)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-51 - Shutdown completed.
+2023-10-10T20:12:48.046+09:00  INFO 3952 --- [restartedMain] kr.ch07.Ch07Application                  : Starting Ch07Application using Java 17.0.8.1 with PID 3952 (C:\Users\Java\Desktop\Workspace\Spring\Ch07\target\classes started by Java in C:\Users\Java\Desktop\Workspace\Spring\Ch07)
+2023-10-10T20:12:48.047+09:00  INFO 3952 --- [restartedMain] kr.ch07.Ch07Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T20:12:48.179+09:00  INFO 3952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-10T20:12:48.180+09:00  INFO 3952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-10T20:12:48.445+09:00  INFO 3952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-10T20:12:48.451+09:00  INFO 3952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2023-10-10T20:12:48.708+09:00  INFO 3952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T20:12:48.714+09:00  INFO 3952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T20:12:48.714+09:00  INFO 3952 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T20:12:48.747+09:00  INFO 3952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Initializing Spring embedded WebApplicationContext
+2023-10-10T20:12:48.747+09:00  INFO 3952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 567 ms
+2023-10-10T20:12:48.983+09:00  INFO 3952 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T20:12:49.082+09:00  INFO 3952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-10T20:12:49.540+09:00  INFO 3952 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d79e15c
+2023-10-10T20:12:49.543+09:00  INFO 3952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-10T20:12:49.603+09:00  WARN 3952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-10T20:12:49.618+09:00  WARN 3952 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-10-10T20:12:49.620+09:00  INFO 3952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-10T20:12:49.632+09:00  INFO 3952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-10T20:12:49.634+09:00  INFO 3952 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T20:12:49.643+09:00  INFO 3952 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-10T20:12:49.652+09:00 ERROR 3952 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-10-10T20:13:24.213+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : Starting Ch07Application using Java 17.0.8.1 with PID 3416 (C:\Users\Java\Desktop\Workspace\Spring\Ch07\target\classes started by Java in C:\Users\Java\Desktop\Workspace\Spring\Ch07)
+2023-10-10T20:13:24.214+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T20:13:24.339+09:00  INFO 3416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-10T20:13:24.339+09:00  INFO 3416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-10T20:13:24.601+09:00  INFO 3416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-10T20:13:24.606+09:00  INFO 3416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2023-10-10T20:13:24.851+09:00  INFO 3416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T20:13:24.856+09:00  INFO 3416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T20:13:24.856+09:00  INFO 3416 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T20:13:24.892+09:00  INFO 3416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Initializing Spring embedded WebApplicationContext
+2023-10-10T20:13:24.892+09:00  INFO 3416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 553 ms
+2023-10-10T20:13:25.099+09:00  INFO 3416 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T20:13:25.196+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-10T20:13:25.583+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d2911d5
+2023-10-10T20:13:25.586+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-10T20:13:25.656+09:00  INFO 3416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T20:13:25.678+09:00  INFO 3416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch07'
+2023-10-10T20:13:25.691+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : Started Ch07Application in 1.649 seconds (process running for 1.964)
+2023-10-10T20:13:39.615+09:00  INFO 3416 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-10T20:13:39.616+09:00  INFO 3416 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-10T20:13:39.616+09:00  INFO 3416 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-10T20:13:39.632+09:00  INFO 3416 --- [http-nio-8080-exec-2] kr.ch07.controller.MainController        : User1DTO(uid=A102, name=김춘추, hp=010-1234-1002, age=23)
+2023-10-10T20:13:39.632+09:00  INFO 3416 --- [http-nio-8080-exec-2] kr.ch07.controller.MainController        : User1DTO(uid=A101, name=김유신, hp=010-1234-1001, age=25)
+2023-10-10T20:13:39.632+09:00  INFO 3416 --- [http-nio-8080-exec-2] kr.ch07.controller.MainController        : User1DTO(uid=A103, name=장보고, hp=010-1234-1003, age=33)
+2023-10-10T20:17:00.451+09:00  INFO 3416 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (0 additions, 0 deletions, 14 modifications)
+2023-10-10T20:17:00.460+09:00  INFO 3416 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T20:17:00.461+09:00  INFO 3416 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-10T20:17:00.468+09:00  INFO 3416 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-10T20:17:00.614+09:00  INFO 3416 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-10T20:17:00.645+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : Starting Ch07Application using Java 17.0.8.1 with PID 3416 (C:\Users\Java\Desktop\Workspace\Spring\Ch07\target\classes started by Java in C:\Users\Java\Desktop\Workspace\Spring\Ch07)
+2023-10-10T20:17:00.645+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T20:17:00.718+09:00  INFO 3416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-10T20:17:00.719+09:00  INFO 3416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JDBC repository interfaces.
+2023-10-10T20:17:00.751+09:00  INFO 3416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T20:17:00.752+09:00  INFO 3416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T20:17:00.752+09:00  INFO 3416 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T20:17:00.758+09:00  INFO 3416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Initializing Spring embedded WebApplicationContext
+2023-10-10T20:17:00.758+09:00  INFO 3416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 112 ms
+2023-10-10T20:17:00.799+09:00  INFO 3416 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T20:17:00.819+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-10-10T20:17:01.047+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@244885d0
+2023-10-10T20:17:01.048+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-10-10T20:17:01.063+09:00  INFO 3416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T20:17:01.072+09:00  INFO 3416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch07'
+2023-10-10T20:17:01.077+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : Started Ch07Application in 0.443 seconds (process running for 217.351)
+2023-10-10T20:17:01.079+09:00  INFO 3416 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-10T20:17:05.988+09:00  INFO 3416 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (0 additions, 0 deletions, 14 modifications)
+2023-10-10T20:17:05.993+09:00  INFO 3416 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T20:17:05.996+09:00  INFO 3416 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-10-10T20:17:06.104+09:00  INFO 3416 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-10-10T20:17:06.139+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : Starting Ch07Application using Java 17.0.8.1 with PID 3416 (C:\Users\Java\Desktop\Workspace\Spring\Ch07\target\classes started by Java in C:\Users\Java\Desktop\Workspace\Spring\Ch07)
+2023-10-10T20:17:06.139+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T20:17:06.195+09:00  INFO 3416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-10T20:17:06.196+09:00  INFO 3416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JDBC repository interfaces.
+2023-10-10T20:17:06.224+09:00  INFO 3416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T20:17:06.224+09:00  INFO 3416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T20:17:06.224+09:00  INFO 3416 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T20:17:06.230+09:00  INFO 3416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Initializing Spring embedded WebApplicationContext
+2023-10-10T20:17:06.230+09:00  INFO 3416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 90 ms
+2023-10-10T20:17:06.266+09:00  INFO 3416 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T20:17:06.281+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-10-10T20:17:06.394+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5da5ea16
+2023-10-10T20:17:06.395+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-10-10T20:17:06.414+09:00  INFO 3416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T20:17:06.422+09:00  INFO 3416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch07'
+2023-10-10T20:17:06.426+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : Started Ch07Application in 0.296 seconds (process running for 222.699)
+2023-10-10T20:17:06.427+09:00  INFO 3416 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-10T20:18:33.354+09:00  INFO 3416 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (0 additions, 0 deletions, 14 modifications)
+2023-10-10T20:18:33.359+09:00  INFO 3416 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T20:18:33.362+09:00  INFO 3416 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-10-10T20:18:33.476+09:00  INFO 3416 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-10-10T20:18:33.522+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : Starting Ch07Application using Java 17.0.8.1 with PID 3416 (C:\Users\Java\Desktop\Workspace\Spring\Ch07\target\classes started by Java in C:\Users\Java\Desktop\Workspace\Spring\Ch07)
+2023-10-10T20:18:33.523+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-10-10T20:18:33.577+09:00  INFO 3416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-10-10T20:18:33.578+09:00  INFO 3416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JDBC repository interfaces.
+2023-10-10T20:18:33.605+09:00  INFO 3416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-10T20:18:33.605+09:00  INFO 3416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-10T20:18:33.605+09:00  INFO 3416 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-10T20:18:33.610+09:00  INFO 3416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Initializing Spring embedded WebApplicationContext
+2023-10-10T20:18:33.610+09:00  INFO 3416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 86 ms
+2023-10-10T20:18:33.645+09:00  INFO 3416 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-10T20:18:33.660+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-10-10T20:18:33.829+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e91fa10
+2023-10-10T20:18:33.829+09:00  INFO 3416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-10-10T20:18:33.842+09:00  INFO 3416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-10T20:18:33.849+09:00  INFO 3416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch07'
+2023-10-10T20:18:33.853+09:00  INFO 3416 --- [restartedMain] kr.ch07.Ch07Application                  : Started Ch07Application in 0.342 seconds (process running for 310.126)
+2023-10-10T20:18:33.854+09:00  INFO 3416 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-10-10T20:19:26.087+09:00  INFO 3416 --- [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-10-10T20:19:26.091+09:00  INFO 3416 --- [RMI TCP Connection(21)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-10T20:19:26.094+09:00  INFO 3416 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-10-10T20:19:26.209+09:00  INFO 3416 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
