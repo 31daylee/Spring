@@ -10,7 +10,7 @@ public class MainController {
         public String index(Authentication authentication) {
 
             if(authentication.isAuthenticated()){
-                return "/index";
+                return "forward:/article/list";
             }else{
                 return "forward:/user/login";
             }

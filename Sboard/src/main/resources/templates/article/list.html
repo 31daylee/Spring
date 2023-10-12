@@ -1,0 +1,56 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.thymeleaf.org"
+      layout:decorate="/index.html">
+
+<div class="sboard-list" layout:fragment="content">
+    <div class="panel">
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>조회수</th>
+                        <th>등록일</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>제목입니다.</td>
+                        <td>길동이</td>
+                        <td>12</td>
+                        <td>2023-10-12</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>제목입니다.</td>
+                        <td>길동이</td>
+                        <td>12</td>
+                        <td>2023-10-12</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>제목입니다.</td>
+                        <td>길동이</td>
+                        <td>12</td>
+                        <td>2023-10-12</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.table-responsive -->
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+    <div class="text-right">
+        <a th:href="@{/article/register}"  class="btn btn-primary">글쓰기</a>
+    </div>
+</div>
+
+</html>
