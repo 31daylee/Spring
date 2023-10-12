@@ -2,6 +2,7 @@ package kr.co.sboard.dto;
 
 import kr.co.sboard.entity.ArticleEntity;
 import lombok.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
 
@@ -19,7 +20,8 @@ public class ArticleDTO {
     private String cate;
     private String title;
     private String content;
-    private String fname;
+    private int file;
+    private MultipartFile fname;
     private int hit;
     private String writer;
     private String regip;
@@ -35,6 +37,7 @@ public class ArticleDTO {
                 .cate(cate)
                 .title(title)
                 .content(content)
+                .file(file)
                 .hit(hit)
                 .writer(writer)
                 .regip(regip)

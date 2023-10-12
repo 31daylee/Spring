@@ -6,7 +6,7 @@
     <div class="panel">
         <!-- /.panel-heading -->
         <div class="panel-body">
-            <form th:action="@{/article/register}" method="POST">
+            <form th:action="@{/article/register}" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="writer" th:value="${#authentication.principal.user.uid}"/>
                 <div class="form-group">
                     <label>제목</label>
