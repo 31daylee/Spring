@@ -6,12 +6,12 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
 
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-@Setter
 @Getter
+@Setter
 @Builder
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class ArticleDTO {
 
     private int no;

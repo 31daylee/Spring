@@ -9,6 +9,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ArticleRepository extends JpaRepository<ArticleEntity,Integer> {
 
-    public Page<ArticleEntity> findByParent(int parent, Pageable pageable);
+    // Pageable 객체는 게시글을 조회할 때 사용된다
+
+    public Page<ArticleEntity> findByParentAndCate(int parent,String cate,Pageable pageable);
 
 }
